@@ -11,7 +11,6 @@ import twitter from '../../assets/Updated Icons/Twitter-1.png'
 export const socialIcons = [
     { name: 'Facebook', icon: facebook },
     { name: 'Instagram', icon: insta },
-    { name: 'Discord', icon: discord },
     { name: 'Dribbble', icon: dribble },
     { name: 'LinkedIn', icon: LinkedIn },
     { name: 'Behance', icon: behance },
