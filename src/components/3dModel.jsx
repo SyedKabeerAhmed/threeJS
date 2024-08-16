@@ -49,7 +49,7 @@ function IconsIn3D({ isHovered }) {
     if (isHovered) {
       // Staggered animation for a wave-like effect
       gsap.to(icons.map((icon, index) => icon.position), {
-        x: (index) => -0.3 +  Math.cos((index * angleIncrement * Math.PI) / 180) * radius,
+        x: (index) => 0.3 +  Math.cos((index * angleIncrement * Math.PI) / 180) * radius,
         y: (index) => -5 + Math.sin((index * angleIncrement * Math.PI) / 180) * radius,
         duration: 1.5,
         ease: 'power2.out',
@@ -91,7 +91,7 @@ function IconsIn3D({ isHovered }) {
       gsap.to(icons.map(icon => icon.scale), {
         x: 1.5,
         y: 1.5,
-        duration: 1,
+        duration: 2,
         ease: 'power2.out',
       });
 
@@ -148,7 +148,7 @@ export default function Basic3DScene() {
                 maxPolarAngle={Math.PI / 2.5} // Limit tilt on the x-axis (upwards)
               />
               <ambientLight intensity={0.5} />
-              <directionalLight position={[5, 5, 5]} intensity={1} />
+              <directionalLight position={[5, 5, 5]} intensity={10} />
               <Suspense fallback={null}>
                 <Model onHover={() => setIsHovered(true)} />
                 <IconsIn3D isHovered={isHovered} />

@@ -13,7 +13,6 @@ export const socialIcons = [
     { name: 'Instagram', icon: insta },
     { name: 'Dribbble', icon: dribble },
     { name: 'LinkedIn', icon: LinkedIn },
-    { name: 'Behance', icon: behance },
     { name: 'TikTok', icon: tiktok },
     { name: 'Twitter', icon: twitter },
   ];
